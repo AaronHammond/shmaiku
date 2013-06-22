@@ -1,0 +1,200 @@
+<head>
+  <title>shmaiku</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:100,400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="shmaiku-container">
+      <div class="haiku">
+          {{> shmaiku}}
+      </div>
+      <div class="wordsplat">
+          {{> wordsplat}}
+      </div>
+      <div id="clock">
+          {{> clock}}
+      </div>
+  </div>
+</body>
+
+<template name="shmaiku">
+
+    <div class="haiku">
+        {{#unless haiku.line1.text}}
+            <p class="haiku-demo">
+                this is the haiku
+            </p>
+        {{/unless}}
+        {{#if haiku.line1.text}}
+            <p class="haiku-real">
+                {{haiku.line1.text}}
+            </p>
+        {{/if}}
+
+        {{#unless haiku.line2.text}}
+        <p class="haiku-demo">
+            that will be replaced only
+        </p>
+        {{/unless}}
+        {{#if haiku.line2.text}}
+        <p class="haiku-real">
+            {{haiku.line2.text}}
+        </p>
+        {{/if}}
+
+        {{#unless haiku.line3.text}}
+        <p class="haiku-demo">
+            when the group votes to
+        </p>
+        {{/unless}}
+        {{#if haiku.line3.text}}
+        <p class="haiku-real">
+            {{haiku.line3.text}}
+        </p>
+        {{/if}}
+
+</template>
+
+<template name="wordsplat">
+
+    {{#with smattering}}
+    <div class="row-fluid">
+        <span id="{{smattering.[0]._id}}"class="span3">
+            <span>
+                {{smattering.[0].word}} - {{smattering.[0].votes}}
+            </span>
+        </span>
+        <span id="{{smattering.[1]._id}}"class="span3">
+            <span>
+                {{smattering.[1].word}} - {{smattering.[1].votes}}
+            </span>
+        </span>
+        <span id="{{smattering.[2]._id}}"class="span3">
+            <span>
+                {{smattering.[2].word}} - {{smattering.[2].votes}}
+            </span>
+        </span>
+        <span id="{{smattering.[3]._id}}"class="span3">
+            <span>
+                {{smattering.[3].word}} - {{smattering.[3].votes}}
+            </span>
+        </span>
+    </div>
+    <div class="row-fluid">
+        <span id="{{smattering.[4]._id}}" class="span3">
+            <span>
+                {{smattering.[4].word}} - {{smattering.[4].votes}}
+            </span>
+        </span>
+        <span id="{{smattering.[5]._id}}"class="span3">
+            <span>
+                {{smattering.[5].word}} - {{smattering.[5].votes}}
+            </span>
+        </span>
+        <span id="{{smattering.[6]._id}}"class="span3">
+            <span>
+                {{smattering.[6].word}} - {{smattering.[6].votes}}
+            </span>
+        </span>
+        <span id="{{smattering.[7]._id}}"class="span3">
+            <span>
+                {{smattering.[7].word}} - {{smattering.[7].votes}}
+            </span>
+        </span>
+    </div>
+    <div class="row-fluid">
+        <span id="{{smattering.[8]._id}}"class="span3">
+            <span>
+                {{smattering.[8].word}} - {{smattering.[8].votes}}
+            </span>
+        </span>
+        <span id="{{smattering.[9]._id}}"class="span3">
+            <span>
+                {{smattering.[9].word}} - {{smattering.[9].votes}}
+            </span>
+        </span>
+        <span id="{{smattering.[10]._id}}"class="span3">
+            <span>
+                {{smattering.[10].word}} - {{smattering.[10].votes}}
+            </span>
+        </span>
+        <span id="{{smattering.[11]._id}}"class="span3">
+            <span>
+                {{smattering.[11].word}} - {{smattering.[11].votes}}
+            </span>
+        </span>
+    </div>
+    <div class="row-fluid">
+        <span id="{{smattering.[12]._id}}"class="span3">
+            <span>
+                {{smattering.[12].word}} - {{smattering.[12].votes}}
+            </span>
+        </span>
+        <span id="{{smattering.[13]._id}}"class="span3">
+            <span>
+                {{smattering.[13].word}} - {{smattering.[13].votes}}
+            </span>
+        </span>
+        <span id="{{smattering.[14]._id}}"class="span3">
+            <span>
+                {{smattering.[14].word}} - {{smattering.[14].votes}}
+            </span>
+        </span>
+        <span id="{{smattering.[15]._id}}"class="span3">
+            <span>
+                {{smattering.[15].word}} - {{smattering.[15].votes}}
+            </span>
+        </span>
+    </div>
+    <div class="row-fluid">
+        <span id="{{smattering.[16]._id}}"class="span3">
+            <span>
+                {{smattering.[16].word}} - {{smattering.[16].votes}}
+            </span>
+        </span>
+        <span id="{{smattering.[17]._id}}"class="span3">
+            <span>
+                {{smattering.[17].word}} - {{smattering.[17].votes}}
+            </span>
+        </span>
+        <span id="{{smattering.[18]._id}}"class="span3">
+            <span>
+                {{smattering.[18].word}} - {{smattering.[18].votes}}
+            </span>
+        </span>
+        <span id="{{smattering.[19]._id}}"class="span3">
+            <span>
+                {{smattering.[19].word}} - {{smattering.[19].votes}}
+            </span>
+        </span>
+    </div>
+    <div class="row-fluid">
+        <span id="{{smattering.[20]._id}}"class="span3">
+            <span>
+                {{smattering.[20].word}} - {{smattering.[20].votes}}
+            </span>
+        </span>
+        <span id="{{smattering.[21]._id}}"class="span3">
+            <span>
+                {{smattering.[21].word}} - {{smattering.[21].votes}}
+            </span>
+        </span>
+        <span id="{{smattering.[22]._id}}"class="span3">
+            <span>
+                {{smattering.[22].word}} - {{smattering.[22].votes}}
+            </span>
+        </span>
+        <span id="{{smattering.[23]._id}}"class="span3">
+            <span>
+                {{smattering.[23].word}} - {{smattering.[23].votes}}
+            </span>
+        </span>
+    </div>
+    {{/with}}
+</template>
+
+<template name="clock">
+    {{ time }}
+</template>
+
+

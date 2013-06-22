@@ -1,0 +1,42 @@
+/* CSS declarations go here */
+
+.haiku-demo {
+    font-weight: 100;
+}
+
+.haiku-real {
+    font-weight: 700;
+}
+
+.haiku {
+    margin-top: 30px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+}
+.wordsplat {
+    width: 60%;
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+
+}
+.wordsplat span span:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+.shmaiku-container{
+    text-align: center;
+}
+
+.row-fluid {
+    margin-bottom: 10px !important;
+}
+
+#clock{
+    margin-top: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: 300;
+}
